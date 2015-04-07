@@ -1,11 +1,11 @@
   <!DOCTYPE html>
   <html>
   <head>
-  
 
- 
 
-<!-- 
+
+
+<!--
    New Perspectives on HTML and XHTML 5th Edition
    Tutorial 8
    Case Problem 1
@@ -20,35 +20,24 @@
 -->
 
    <title>NH PoliWeb</title>
-   
-    
+
+
 </head>
 <!--"Create a frameset that consists of two rows, with the top row set at 130 pixels and the bottom row occupying the remain- ing space in the browser window. Set the frame border color to green."-->
 
-    <body>
-     
-<frameset rows="130,*" border="1" bordercolor="green" >
-   <frame src="title.htm" scrolling="no" marginheight="0" name="top" frameborder="0" noresize="noresize"></frame> 
-    
-    <!--Nested Frame-->
-    <frameset cols="35,*" border="0">
-        <frame src="map.htm" marginheight="0" scrolling="no" name="links" frameborder="0" noresize="noresize"></frame>
+
+<frameset rows="130,*" bordercolor="green">
+      <frame src="title.htm" marginwidth="0" name="top" />
+        <frameset cols="235,*">
+          <frame src="map.htm" name="links" marginwidth="0" />
+           <frameset rows="50,*">
+              <frame src="notes.htm" name="notes" marginwidth="0" />
+                <frame name="documents" src="statewide.htm" marginwidth="0" />
+            </frameset>
         </frameset>
 
-        
-        <!--Nested Frame-->
-        <frameset rows="50,*" border="0">
-            <frame src="notes.htm" frameboarder="0" scrolling="no" noresize="noresize"name="notes"></frame> 
-            <!--closeframe-->
-            
-        </frameset>
-        
-                
-        </frameset>
-    
 
 
-</body>
 
 
 
